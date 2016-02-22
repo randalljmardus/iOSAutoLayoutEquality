@@ -19,13 +19,14 @@ class ViewController: UIViewController {
         subview.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(subview)
         
-        subview.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
-        subview.widthAnchor.constraintEqualToConstant(100).active = true
-        subview.heightAnchor.constraintEqualToConstant(100).active = true
+       subview.topAnchor.constraintEqualToAnchor(view.topAnchor).active = true
+       subview.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
+       subview.heightAnchor.constraintEqualToConstant(100).active = true
+       
+        subview.widthAnchor.constraintLessThanOrEqualToAnchor(view.widthAnchor).active = true
+        subview.widthAnchor.constraintGreaterThanOrEqualToAnchor(view.widthAnchor).active = true
         
-        subview.topAnchor.constraintEqualToAnchor(view.topAnchor).active = true
-        view.topAnchor.constraintEqualToAnchor(subview.topAnchor).active = true
-        
+    
     
     }
 
