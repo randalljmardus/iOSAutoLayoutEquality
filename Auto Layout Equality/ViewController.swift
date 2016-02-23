@@ -23,10 +23,11 @@ class ViewController: UIViewController {
        subview.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
        subview.heightAnchor.constraintEqualToConstant(100).active = true
        
-        subview.widthAnchor.constraintLessThanOrEqualToAnchor(view.widthAnchor).active = true
-        subview.widthAnchor.constraintGreaterThanOrEqualToAnchor(view.widthAnchor).active = true
+      //subview.widthAnchor.constraintLessThanOrEqualToAnchor(view.widthAnchor).active = true
+      //  subview.widthAnchor.constraintGreaterThanOrEqualToAnchor(view.widthAnchor).active = true
         
-    
+        subview.widthAnchor.constraintLessThanOrEqualToAnchor(view.widthAnchor).active = true
+        subview.widthAnchor.constraintGreaterThanOrEqualToConstant(100).active = true
     
     }
 
